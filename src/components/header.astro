@@ -1,0 +1,68 @@
+---
+import ThemeSwitcher from "./theme-switcher.astro";
+---
+
+<header class="header">
+  <div class="header__container px-default">
+    <div class="header__panel header__panel--left">
+      <a href="/" class="text font--bold">Duy Huynh</a>
+    </div>
+    <nav class="header__panel header__panel--center">
+      <ul class="header__nav">
+        <li>
+          <a href="/" class="text text--sm">Home</a>
+        </li>
+        <li><a href="#" class="text text--sm">About</a></li>
+        <li><a href="#" class="text text--sm">Projects</a></li>
+        <li><a href="#" class="text text--sm">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__panel header__panel--right">
+      <ThemeSwitcher />
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #eaeaea;
+    height: 5rem;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  }
+
+  .header__panel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header__panel--left {
+    flex: 0 0 100px;
+  }
+
+  .header__panel--center {
+    flex: 1;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__panel--right {
+    flex: 0 0 100px;
+  }
+</style>
