@@ -3,7 +3,7 @@ import ThemeSwitcher from "./theme-switcher.astro";
 ---
 
 <header class="header">
-  <div class="header__container px-default">
+  <div class="header__container container">
     <div class="header__panel header__panel--left">
       <a href="/" class="text font--bold">Duy Huynh</a>
     </div>
@@ -27,16 +27,13 @@ import ThemeSwitcher from "./theme-switcher.astro";
   .header {
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #eaeaea;
-    height: 5rem;
+    border-bottom: var(--border-default);
+    height: 6.4rem;
   }
 
   .header__container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
     height: 100%;
   }
 

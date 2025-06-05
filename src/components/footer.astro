@@ -3,7 +3,7 @@
 ---
 
 <footer class="footer">
-  <div class="footer__container px-default">
+  <div class="footer__container container">
     <div class="footer__panel footer__panel--left">
       <a href="/" class="text--sm font--bold">Duy Huynh</a>
       <small class="">© 2025 Duy Huynh. All rights reserved.</small>
@@ -13,13 +13,11 @@
 </footer>
 <style>
   .footer {
-    border-top: 1px solid #eaeaea;
-    height: 5rem;
+    border-top: var(--border-default);
+    height: 6rem;
   }
   .footer__container {
     display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
     height: 100%;
   }
   .footer__panel {
