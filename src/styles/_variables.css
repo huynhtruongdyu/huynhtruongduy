@@ -2,3 +2,23 @@
 @import "./variables/_typography.css";
 @import "./variables/_spacing.css";
 @import "./variables/_border.css";
+@import "./variables/_shadow.css";
+
+/* Mobile phones (up to 639px) */
+@media screen and (max-width: 639px) {
+}
+
+/* sm: 640px to 767px */
+@media screen and (min-width: 640px) and (max-width: 767px) {
+}
+/* md: 768px to 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* lg: 1024px to 1279px */
+@media screen and (min-width: 1024px) {
+}
+
+/* xl: 1280px and up */
+@media screen and (min-width: 1280px) {
+}
